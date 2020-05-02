@@ -11,10 +11,12 @@ static char *font2[] = {
 	"Inconsolata for Powerline:pixelsize=18:antialias=true:autohint=true", 
 	"Source Code Pro:pixelsize=18:antialias=true:autohint=true"
 };
-//static char *font2[] = {
-//	"Inconsolata for Powerline:pixelsize=20:antialias=true:autohint=true", 
-//	"Sauce Code Pro Medium Nerd Font Complete Mono:pixelsize=20:antialias=true:autohint=true"
-//};
+/*
+static char *font2[] = {
+	"Inconsolata for Powerline:pixelsize=20:antialias=true:autohint=true", 
+	"Sauce Code Pro Medium Nerd Font Complete Mono:pixelsize=20:antialias=true:autohint=true"
+};
+*/
 
 static int borderpx = 2;
 
@@ -203,10 +205,10 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,               XK_i,           kscrollup,      {.i =  1} },
-	{ MODKEY,               XK_k,           kscrolldown,    {.i =  1} },
-	{ MODKEY|ControlMask,   XK_i,           kscrollup,      {.i = -1} },
-	{ MODKEY|ControlMask,   XK_k,           kscrolldown,    {.i = -1} },
+	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} },
+	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
+	{ MODKEY|ControlMask,   XK_k,           kscrollup,      {.i = -1} },
+	{ MODKEY|ControlMask,   XK_j,           kscrolldown,    {.i = -1} },
 };
 
 /*
