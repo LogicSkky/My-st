@@ -11,12 +11,6 @@ static char *font2[] = {
 	"Inconsolata for Powerline:pixelsize=18:antialias=true:autohint=true", 
 	"Source Code Pro:pixelsize=18:antialias=true:autohint=true"
 };
-/*
-static char *font2[] = {
-	"Inconsolata for Powerline:pixelsize=20:antialias=true:autohint=true", 
-	"Sauce Code Pro Medium Nerd Font Complete Mono:pixelsize=20:antialias=true:autohint=true"
-};
-*/
 
 static int borderpx = 2;
 
@@ -192,23 +186,23 @@ static MouseShortcut mshortcuts[] = {
 #define TERMMOD (ControlMask|ShiftMask)
 
 static Shortcut shortcuts[] = {
-	/* mask                 keysym          function        argument */
-	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
-	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
-	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
-	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
-	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
-	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
-	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
-	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
-	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
-	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
-	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} },
-	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
-	{ MODKEY|ControlMask,   XK_k,           kscrollup,      {.i = -1} },
-	{ MODKEY|ControlMask,   XK_j,           kscrolldown,    {.i = -1} },
+	/* mask                         keysym          function        argument */
+	{ XK_ANY_MOD,                   XK_Break,       sendbreak,      {.i =  0} },
+	{ ControlMask,                  XK_Print,       toggleprinter,  {.i =  0} },
+	{ ShiftMask,                    XK_Print,       printscreen,    {.i =  0} },
+	{ XK_ANY_MOD,                   XK_Print,       printsel,       {.i =  0} },
+	{ TERMMOD,                      XK_Prior,       zoom,           {.f = +1} },
+	{ TERMMOD,                      XK_Next,        zoom,           {.f = -1} },
+	{ TERMMOD,                      XK_Home,        zoomreset,      {.f =  0} },
+	{ TERMMOD,                      XK_C,           clipcopy,       {.i =  0} },
+	{ TERMMOD,                      XK_V,           clippaste,      {.i =  0} },
+	{ TERMMOD,                      XK_Y,           selpaste,       {.i =  0} },
+	{ ShiftMask,                    XK_Insert,      selpaste,       {.i =  0} },
+	{ TERMMOD,                      XK_Num_Lock,    numlock,        {.i =  0} },
+	{ MODKEY|ControlMask,           XK_k,           kscrollup,      {.i =  1} },
+	{ MODKEY|ControlMask,           XK_j,           kscrolldown,    {.i =  1} },
+	{ MODKEY|ControlMask|ShiftMask, XK_K,           kscrollup,      {.i = -1} },
+	{ MODKEY|ControlMask|ShiftMask, XK_J,           kscrolldown,    {.i = -1} },
 };
 
 /*
